@@ -4,7 +4,7 @@ pipeline {
         stage ('Compile Stage') {
 
             steps {
-                echo $JAVA_HOME
+                echo "$JAVA_HOME"
                 withMaven(maven : 'apache-maven-3.6.1') {
                     sh 'mvn clean compile'
                 }
