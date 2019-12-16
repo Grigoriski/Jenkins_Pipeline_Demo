@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    environment{
+        JAVA_HOME="/usr/lib/jvm/jdk1.8.0_231"
+    }
     stages {
         stage ('Compile Stage') {
 
